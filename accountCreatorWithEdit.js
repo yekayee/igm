@@ -38,7 +38,7 @@ const connection = mysql.createConnection({
 const functionRegister = (username, csrf, rur, mid, user_agent) =>
   new Promise((resolve, reject) => {
     const params = new URLSearchParams();
-    params.append("email", `${username}@gmail.com`);
+    params.append("email", `${username}@aminudin.me`);
     params.append("password", "310100r");
     params.append("username", username);
     params.append("first_name", username);
@@ -127,7 +127,7 @@ const genSes = length =>
             "=>" +
             " " +
             colors.FgGreen,
-            `Email server : gmail.com/${username}`,
+            `Email server : generator.email/aminudin.me/${username}`,
             colors.Reset
           );
           await console.log(
@@ -172,8 +172,8 @@ const genSes = length =>
               colors.Reset
             );
             await delay(10000);
-            const LoginToDO = await login.functionLogin(username, "310100r", csrfToken, rur, mid, user_agent);
-            const getCookies = await login.functionGetCookie(username, "310100r", csrfToken, rur, mid, user_agent);
+            const LoginToDO = await login.functionLogin(username, "berak321amin", csrfToken, rur, mid, user_agent);
+            const getCookies = await login.functionGetCookie(username, "berak321amin", csrfToken, rur, mid, user_agent);
 
             if (LoginToDO.authenticated === true) {
               await console.log(
@@ -192,7 +192,7 @@ const genSes = length =>
               if (choiseDb.toLowerCase() === 'y') {
                 const post = {
                   username: username,
-                  password: "310100r",
+                  password: "berak321amin",
                   account_id: regist.user_id
                 };
                 await console.log(
@@ -260,7 +260,7 @@ const genSes = length =>
                 );
                 const post = {
                   username: username,
-                  password: "310100r",
+                  password: "berak321amin",
                   account_id: regist.user_id
                 };
                 await fs.appendFile(
@@ -292,10 +292,10 @@ const genSes = length =>
                 const sessionId = getCookies.extensions.join().split(',')[9];
                 const post = {
                   username: username,
-                  password: "310100r"
+                  password: "berak321amin"
                 }
                 await delay(1000);
-                const updateProf = await updateProfile.updateProfile(csrfToken, mid, ds, rur, sessionId, shbidddd, shbtsss, username, `${username}@gmail.com`, user_agent);
+                const updateProf = await updateProfile.updateProfile(csrfToken, mid, ds, rur, sessionId, shbidddd, shbtsss, username, `${username}@aminudin.me`, user_agent);
                 // if (follow.status === 'ok') {
                 //   console.log(follow, post.username)
                 // }
@@ -306,13 +306,13 @@ const genSes = length =>
                 const sessionId = getCookies.extensions.join().split(',')[5];
                 const post = {
                   username: username,
-                  password: "310100r"
+                  password: "berak321amin"
                 }
 
                 const shbidddd = '';
                 const shbtsss = '';
                 await delay(1000);
-                const updateProf = await updateProfile.updateProfile(csrfToken, mid, ds, rur, sessionId, shbidddd, shbtsss, username, `${username}@gmail.com`, user_agent);
+                const updateProf = await updateProfile.updateProfile(csrfToken, mid, ds, rur, sessionId, shbidddd, shbtsss, username, `${username}@aminudin.me`, user_agent);
                 // if (follow.status === 'ok') {
                 //   console.log(follow, post.username)
                 // }
