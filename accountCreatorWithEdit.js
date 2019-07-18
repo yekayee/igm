@@ -38,7 +38,7 @@ const connection = mysql.createConnection({
 const functionRegister = (username, csrf, rur, mid, user_agent) =>
   new Promise((resolve, reject) => {
     const params = new URLSearchParams();
-    params.append("email", `${username}@aminudin.me`);
+    params.append("email", `${username}@maxpanel.id`);
     params.append("password", "310100r");
     params.append("username", username);
     params.append("first_name", username);
@@ -127,7 +127,7 @@ const genSes = length =>
             "=>" +
             " " +
             colors.FgGreen,
-            `Email server : generator.email/aminudin.me/${username}`,
+            `Email server : generator.email/maxpanel.id/${username}`,
             colors.Reset
           );
           await console.log(
@@ -295,7 +295,7 @@ const genSes = length =>
                   password: "berak321amin"
                 }
                 await delay(1000);
-                const updateProf = await updateProfile.updateProfile(csrfToken, mid, ds, rur, sessionId, shbidddd, shbtsss, username, `${username}@aminudin.me`, user_agent);
+                const updateProf = await updateProfile.updateProfile(csrfToken, mid, ds, rur, sessionId, shbidddd, shbtsss, username, `${username}@maxpanel.id`, user_agent);
                 // if (follow.status === 'ok') {
                 //   console.log(follow, post.username)
                 // }
@@ -312,7 +312,7 @@ const genSes = length =>
                 const shbidddd = '';
                 const shbtsss = '';
                 await delay(1000);
-                const updateProf = await updateProfile.updateProfile(csrfToken, mid, ds, rur, sessionId, shbidddd, shbtsss, username, `${username}@aminudin.me`, user_agent);
+                const updateProf = await updateProfile.updateProfile(csrfToken, mid, ds, rur, sessionId, shbidddd, shbtsss, username, `${username}@maxpanel.id`, user_agent);
                 // if (follow.status === 'ok') {
                 //   console.log(follow, post.username)
                 // }
