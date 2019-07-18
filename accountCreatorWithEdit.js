@@ -172,8 +172,8 @@ const genSes = length =>
               colors.Reset
             );
             await delay(10000);
-            const LoginToDO = await login.functionLogin(username, "berak321amin", csrfToken, rur, mid, user_agent);
-            const getCookies = await login.functionGetCookie(username, "berak321amin", csrfToken, rur, mid, user_agent);
+            const LoginToDO = await login.functionLogin(username, "310100r", csrfToken, rur, mid, user_agent);
+            const getCookies = await login.functionGetCookie(username, "310100r", csrfToken, rur, mid, user_agent);
 
             if (LoginToDO.authenticated === true) {
               await console.log(
@@ -192,7 +192,7 @@ const genSes = length =>
               if (choiseDb.toLowerCase() === 'y') {
                 const post = {
                   username: username,
-                  password: "berak321amin",
+                  password: "310100r",
                   account_id: regist.user_id
                 };
                 await console.log(
@@ -260,7 +260,7 @@ const genSes = length =>
                 );
                 const post = {
                   username: username,
-                  password: "berak321amin",
+                  password: "310100r",
                   account_id: regist.user_id
                 };
                 await fs.appendFile(
@@ -292,7 +292,7 @@ const genSes = length =>
                 const sessionId = getCookies.extensions.join().split(',')[9];
                 const post = {
                   username: username,
-                  password: "berak321amin"
+                  password: "310100r"
                 }
                 await delay(1000);
                 const updateProf = await updateProfile.updateProfile(csrfToken, mid, ds, rur, sessionId, shbidddd, shbtsss, username, `${username}@maxpanel.id`, user_agent);
@@ -306,7 +306,7 @@ const genSes = length =>
                 const sessionId = getCookies.extensions.join().split(',')[5];
                 const post = {
                   username: username,
-                  password: "berak321amin"
+                  password: "310100r"
                 }
 
                 const shbidddd = '';
