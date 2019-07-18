@@ -37,7 +37,7 @@ const connection = mysql.createConnection({
 const functionRegister = (username, csrf, rur, mid, user_agent) =>
   new Promise((resolve, reject) => {
     const params = new URLSearchParams();
-    params.append("email", `${username}@gmail.com.com`);
+    params.append("email", `${username}@maxpanel.id`);
     params.append("password", "310100r");
     params.append("username", username);
     params.append("first_name", username);
@@ -126,7 +126,7 @@ const genSes = length =>
             "=>" +
             " " +
             colors.FgGreen,
-            `Email server : gmail.com.com/${username}`,
+            `Email server : generator.email/maxpanel.id/${username}`,
             colors.Reset
           );
           await console.log(
